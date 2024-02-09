@@ -21,9 +21,8 @@ Build and Run
 mvn spring-boot:run
 The application will be accessible at http://localhost:8080.
 
-API Endpoints
-Purchase Ticket:
-
+###API Endpoints
+Book Ticket:
 Endpoint: POST /api/ticket/{userId}
 Parameters: fromLoc, toLoc, price, section, seatNumber, userId
 e.g. JSON Body
@@ -54,17 +53,17 @@ Endpoint: PUT /api/ticket?ticketId={...}&newSection={...}&newSeatNumber{...}
 Parameters: ticketId, newSection, newSeatNumber
 
 
-Running Tests
+###Running Tests
 ```bash
 mvn test
 
 
-Contributing
+###Contributing
 Fork the repository
 Create a feature branch (git checkout -b feature/new-feature)
 Commit your changes (git commit -m 'Add new feature')
 Push to the branch (git push origin feature/new-feature)
 Open a pull request
 
-
+###License
 This README provides basic information on how to get started, run the application, use the API endpoints, run tests, and contribute to the project. Customize it further based on the specific details and features of your application.
