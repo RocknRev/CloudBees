@@ -37,10 +37,10 @@ public class TicketController {
 		return new ResponseEntity<>(ticket,HttpStatus.OK);
 	}
 	
-	@GetMapping("{section}")
-    public List<Ticket> getTicketsBySection(@PathVariable String section) {
-        return ticketService.getTicketsBySection(section);
-    }
+	@GetMapping("section-wise")
+    	public ResponseEntity<List<Ticket>> getTicketsBySection(@RequestParam String section) {
+		return new ResponseEntity<>(ticketService.getTicketsBySection(section),HttpStatus.OK);
+    	}
 	
 	@GetMapping
 	public ResponseEntity<List<Ticket>> showAllBookedTickets(){
