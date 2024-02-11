@@ -62,7 +62,7 @@ public class TicketServiceImpl implements TicketService{
 		
 	@Override
 	public List<Ticket> getTicketsBySection(String section) {
-        return ticketRepo.findBySection(section);
-    }
+	        return ticketRepo.findBySection(section);
+	}
 	
 }
